@@ -30,7 +30,7 @@ import logo3 from "../imgs/logo2-Inverted.png"; */
           <a href='https://www.hitachiaircon.com/in/ranges/ducted-air-conditioners' target={"blank"} >Ductable unit</a>,
           <a href='https://www.daikin.eu/en_us/product-group/air-handling-units.html'target={"blank"}> Ahu’s unit</a>],
           imglink:product,
-          main_topic_link:"Cooling",
+          main_topic_link:"#/Cooling",
           bgimg:product_deatils_cooling
 
       },     {  
@@ -43,7 +43,7 @@ import logo3 from "../imgs/logo2-Inverted.png"; */
  
         "Jet Fans"],
           imglink:airvent,
-          main_topic_link:"Ventilation",
+          main_topic_link:"#/Ventilation",
           bgimg:product_deatils_ventilation
       },     {  
         topic:"Ductings",
@@ -54,7 +54,7 @@ import logo3 from "../imgs/logo2-Inverted.png"; */
        <a href='https://www.mskairductindustries.com/' target={"blank"}>Spirals Ducts</a>  ,
        <a href='https://www.cosmichvac.com/'>Oval Ducts</a> ],
           imglink:ducting,
-          main_topic_link:"Ventilation",
+          main_topic_link:"#/Ventilation",
           bgimg:product_deatils_ducting
       }
     ]

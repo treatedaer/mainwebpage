@@ -109,7 +109,14 @@ const Product_display = (props) => {
   
   
   
-        partylist.servicelist.map(serviceobj =>slides.push(<SwiperSlide key={`slide-${serviceobj.service}`}><div 
+        partylist.servicelist.map(serviceobj =>slides.push(<SwiperSlide key={`slide-${serviceobj.service}`}><img src={windowSize.innerWidth>673?serviceobj.link:serviceobj.link_mobile} 
+         
+          className='desc'></img></SwiperSlide>) 
+  
+        )
+ /*
+ 
+      partylist.servicelist.map(serviceobj =>slides.push(<SwiperSlide key={`slide-${serviceobj.service}`}><div 
           style={
            {background: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 0.1%, rgba(0, 0, 0, 0)), url('${windowSize.innerWidth>800?serviceobj.link:serviceobj.link_mobile}')`,
            backgroundSize: '100%',backgroundRepeat: 'no-repeat',backgroundPositionY:'50%, 50%',backgroundPositionX:'50%, 50%',backgroundColor:serviceobj.bgcolor
@@ -118,7 +125,16 @@ const Product_display = (props) => {
           className='desc'><div className='Vendorname'></div></div></SwiperSlide>) 
   
         )
- /*position: absolute;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ position: absolute;
 top: 10px;
 right: 15px;
 margin-top: 4px;
@@ -232,7 +248,7 @@ console.log(productdetail)
     slidesPerView={slideperview}
     centeredSlides={true}
     spaceBetween={5}
-    autoplay={{delay:5000,
+    autoplay={{delay:15000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true}}
     direction={'horizontal'}
@@ -261,7 +277,7 @@ console.log(productdetail)
 {location.pathname=="/home"?<h1>{productdetail.mainhead}</h1>:<h1 className="h1_otherthanhome" >{productdetail.mainhead}</h1>}
         <h2 className={productdetail.subhead}>{productdetail.subhead}</h2>
         <div className="item">
-           <div> <a onClick={closenavfc} href="#/quoteform">Get Quote</a></div>
+           <div> <a onClick={closenavfc} href="#/quoteform">Get Product</a></div>
            </div>
       </center>
 

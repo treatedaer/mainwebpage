@@ -93,7 +93,11 @@ background: black;
     font-size: 0.9em;
     text-align: right;
   }
+  .column ul {
+    display: block;
+  }
   @media screen and (max-width: 850px) {
+  
     .row.primary {
       grid-template-columns: 1fr;
     }

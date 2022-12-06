@@ -91,7 +91,7 @@ color: white;
 }
 .swiper-slide .desc{
   background-color: #fff0;
-  padding: 1rem;
+
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -104,13 +104,12 @@ color: white;
   background-size: auto, auto;
   background-size: cover;
   display: flex;
- 
-  height: 549px;
+
 
  }
  .rightside .swiper-slide .desc{
-  width: 98%;
 
+  object-fit: contain;
 }
  .Vendorsholder .swiper-slide .desc{
   width: 300px;
@@ -125,12 +124,18 @@ margin: auto;
   right: 92px;
   left: auto;
 }
- @media only screen and (max-width:800px) {
+@media only screen and (max-width:633px) {
+
   .swiper-slide .desc {
 
     width: 100%;
     margin: 0 2rem 0 2rem;
+    object-fit: scale-down;
   }
+
+}
+ @media only screen and (max-width:800px) {
+  
   .swiper {
  
     height:auto;

@@ -48,22 +48,15 @@ const Footer =()=> {
 </div>
 
 <div className="column links">
-<h3>What we Offer</h3>
+<h3>Connect with us</h3>
 
- <ul>
+<div className="social-container2">
+    <ul className="social-icons">
+        <li><a href=""><i className="fa fa-instagram"></i></a></li>
 
-  <li>
-   <a href="#/Ventilation">Ventilation</a>
-  </li>
-  <li>
-   <a href="#/Cooling">Cooling</a>
-  </li>
-  <li>
-   <a href="#/Maintaince_Repair">Repair and Maintaince</a>
-  </li>
-
- </ul>
-
+        <li><a href=""><i className="fa fa-facebook"></i></a></li>
+    </ul>
+    </div>
 </div>
 
 </div>
