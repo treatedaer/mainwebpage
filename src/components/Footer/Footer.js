@@ -48,7 +48,7 @@ const Footer =()=> {
 </div>
 
 <div className="column links">
-<h3>Connect with us</h3>
+
 
 <div className="social-container2">
     <ul className="social-icons">

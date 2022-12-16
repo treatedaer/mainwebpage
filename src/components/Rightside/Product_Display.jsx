@@ -4,7 +4,7 @@ import React,{  useEffect ,useState} from "react";
 import whatsapp from "../imgs/WhatsApp_icon.png"
 import whatsapp_chatwithus from "../imgs/wa_chatwithus.png"
 import sheduleameeting from "../imgs/schedule_meeting.png"
-
+import thclogo from "../imgs/tac1logo.jpg"
 import banner_3 from "../imgs/banner_3.jpg"
 import { useLocation } from 'react-router-dom';
 import SwiperCore, { Virtual, Navigation, Pagination,Autoplay } from 'swiper';
@@ -207,7 +207,7 @@ console.log(productdetail)
     <div>
      
       <center>
-        {location.pathname=="/home"?<h1>Treatedaer</h1>:<h1>Treatedaer</h1>}
+        {location.pathname=="/Home"?<img src={thclogo} className="logoimg"></img>:<img src={thclogo} className="logoimg"></img>}
     <div className={windowSize.innerWidth>800?"navitem-holder":"navitem-holder mobile"}>
     <div className="phone_holder meeting_desktop_img_holder"><a href="#/Book_a_meeting" >{windowSize.innerWidth>800?<img className="whatsapp_img" src={sheduleameeting}/>:<img className="whatsapp_img_mobile shcedulemeeting" src={sheduleameeting}/>}</a></div>
         <div className="navitemsholder">

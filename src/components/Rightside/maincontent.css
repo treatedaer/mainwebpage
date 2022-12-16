@@ -277,13 +277,22 @@ display: none;
   width: 100%;
 padding-bottom: 40px;
 position: relative;
-
-
 z-index: 10;
-
 transition: 0.3s all ease-in-out;
 padding-top: 78px;
 }
+.rightside .logoimg{
+  vertical-align: middle;
+margin-top: 40px;
+width: 242px;
+mix-blend-mode: unset;
+background-blend-mode: hard-light;
+mix-blend-mode: multiply;
+border-radius: 17px;
+margin-bottom: 10px;
+height: 109px;
+}
+
 .rightside h1{
   color: white;
 margin-top: 10px;
@@ -542,7 +551,7 @@ z-index: 10;
 
     position: absolute;
     content: '';
-    background: linear-gradient(to bottom, rgba(157, 24, 24, 0) 20%, rgba(0, 0, 0, 0)), url('../imgs/handShake.jpg');
+    
     top: 5px;
     height: 59%;
     width: 100%;
@@ -550,7 +559,7 @@ z-index: 10;
     left: 0;
     background-size: cover;
     filter: blur(30px);
-    opacity: 0.5;
+   
     background-position: 27px;
     animation: none;
     background-blend-mode: saturation;
