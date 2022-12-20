@@ -290,14 +290,20 @@ background-blend-mode: hard-light;
 mix-blend-mode: multiply;
 border-radius: 17px;
 margin-bottom: 10px;
-height: 109px;
+
 }
 
 .rightside h1{
   color: white;
-margin-top: 10px;
-font-weight: 700;
-font-size: 48px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 34px;
+
+}
+.rightside .company_name {
+  font-size: 56px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .rightside h2{
   color: #fff;
@@ -357,7 +363,7 @@ z-index: 2;
 width: 100px;
 }
 .rightside .h1_otherthanhome{
-  margin-top: 42px;
+  
   margin-bottom: 8px;
 }
 .fa-close:hover{
@@ -531,6 +537,12 @@ z-index: 10;
 
 
 @media only screen and (max-width:800px) {
+  .rightside .company_name {
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    display: none;
+  }
   .phone_holder{
     color: white;
     margin-left: auto;
@@ -539,6 +551,7 @@ z-index: 10;
     
     
   }
+
   .rightside .img_otherthanhome {
     width: 100px;
 

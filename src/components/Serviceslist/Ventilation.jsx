@@ -25,7 +25,7 @@ function Ventilation() {
           service:"Car parking Area",
           link:"https://media.istockphoto.com/photos/dealer-new-cars-stock-picture-id480652712?k=20&m=480652712&s=612x612&w=0&h=dbyTkQ3-PJJMAlNAR2hGxPWX1ODvSJspuDsdvQmOKlI=",
           tags:[ "Parking", "Car Parking","Parking Complex"],
-          desc:"With the help of a exahaust Keep your parking area  pollutant free"
+          desc:"With the help of a exhaust Keep your parking area  pollutant free"
           
           
         },
@@ -33,7 +33,7 @@ function Ventilation() {
           service:"Basement",
           link:"https://thumbs.dreamstime.com/b/basement-pipes-modern-plumbing-old-building-62728891.jpg",
           tags:[ "Basement Ventilation"],
-          desc:"Have a healthy environment by removing moisture and Contamiinated air"
+          desc:"Have a healthy environment by removing moisture and contaminated air"
 
         },
         {
@@ -87,7 +87,7 @@ console.log(partylist.servicelist[0].tags)
    const product_display_holder = 
    {
      mainhead:"Ventilation",
-     subhead:"Reshening Page",
+     subhead:"Refreshing Page",
      product_list: [
        {  
          topic:"Ventilation",

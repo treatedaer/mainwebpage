@@ -22,12 +22,14 @@ const Footer =()=> {
 
  <ul>
  <li>
-   Brivis
-  </li>
-  <li>
    Daikin
   </li>
-
+  <li>
+   Cresco
+  </li>
+ <a href={"#/home#whyus"} ><li onClick={(e) => document.getElementById("whyus").scrollIntoView() } >
+   And Many More
+  </li></a>
  </ul>
 
 </div>
@@ -52,15 +54,18 @@ const Footer =()=> {
 
 <div className="social-container2">
     <ul className="social-icons">
-        <li><a href=""><i className="fa fa-instagram"></i></a></li>
+        <li><a href="https://instagram.com/treatedaer?igshid=YmMyMTA2M2Y="><i className="fa fa-instagram"></i></a></li>
 
         <li><a href=""><i className="fa fa-facebook"></i></a></li>
     </ul>
     </div>
 </div>
 
-</div>
 
+</div>
+<div className="website-builder-credits">
+   Website Done and Maintained by Void it.
+</div>
 </footer> 
 
 

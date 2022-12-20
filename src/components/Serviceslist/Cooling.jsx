@@ -125,14 +125,14 @@ console.log(partylist.servicelist[0].tags)
               <div className='topic'>Cassette Unit 
               </div> 
               <li> 
-                <a>One Way  Casstee</a>
+                <a>One Way Cassette</a>
               </li>  
               <li>
                  
-                 <a >Two Way  Casstee</a>
+                 <a >Two Way Cassette</a>
               </li>
               <li> 
-              <a >Four Way  Casstee</a>
+              <a >Four Way Cassette</a>
               </li>
               </ul>,
              <ul>

@@ -43,7 +43,11 @@ background: black;
     margin: 0;
   }
   li:not(:first-child) {
-    margin-top: 0.8em;
+    margin-top: 2px;
+  }
+  li:last-child{
+    margin-top: 3px;
+  
   }
   .column ul li a {
     color: #a7a7a7;
@@ -95,6 +99,16 @@ background: black;
   }
   .column ul {
     display: block;
+  }
+  .website-builder-credits{
+    background-color: #0075c6;
+    color: #fff;
+    padding: .4rem;
+      padding-left: 0.4rem;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 0px;
+    padding-left: 33px;
   }
   @media screen and (max-width: 850px) {
   
