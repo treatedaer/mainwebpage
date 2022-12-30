@@ -13,6 +13,7 @@ import Promtscreen from "../Promtscreen/Promtscreen";
 import ResNav from "./ResNav";
 import Rightside from "./Topform";
 import { useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 var test = true;
 const firebaseConfig = {
   apiKey: "AIzaSyD8v-I8yNPBHIfU9lEY6xfLm1GeJT5QXP0",
@@ -163,6 +164,16 @@ const Quoteform=(props)=>{
 
   return( <div>
         {cormationmsg.enable ? <Promtscreen type={cormationmsg.type} /> : null}
+        <Helmet>
+        <title>Book A Meeting With Treatedaer</title>
+<meta
+  name="description"
+  content="Schedule a meeting with you on your convenience time to discuss 
+  about the air conditioning works. We are available on Monday to Saturday (9 am to 6 pm). 
+  Please would you indicate a suitable time and place to meet"
+/>
+
+        </Helmet>
         <ResNav />
         <Rightside  />
 <h1 className="book_a_meeting">Book A Meeting!</h1>

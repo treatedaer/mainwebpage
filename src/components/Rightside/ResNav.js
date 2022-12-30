@@ -58,9 +58,9 @@ const servicelistnavbarmain = [
   ];
 
   const navitem = [
-    {
-      name:"Home",link:"Home"
-   },
+ 
+  
+
    {
       name:"Service List",link:"servicelist"
    },
@@ -75,9 +75,7 @@ const servicelistnavbarmain = [
 },
 {
   name:"Contact US",link:"contactus"
-}
-  ]
-
+} ]
 
 
 
@@ -101,6 +99,7 @@ const ResNav = () => {
             }
     
       } 
+      console.log(navpath)
      
 
       if(document.getElementById(navhash.slice(1))){
@@ -147,24 +146,39 @@ const ResNav = () => {
   <a href="#" class="close" ></a>
   <div className="resnavitemholder">
 
-{
+
+    <div>
+      <div className="hr"></div>
+      <div className="navitem" >
+        <a href="index.html" >Home</a>
+      </div>
+    </div>
+    {
    navitem.map((item)=>(
     <div><div className="hr"></div>
     <div className="navitem" >
-      {navhash != "/home" ? (
-        <a item={item.link} onClick={(e) => document.getElementById(e.target.getAttribute("item")).scrollIntoView() }  href={"#/home#"+item.link}>{item.name}</a>
-      ) : (
-        <a item={item.link} onClick={(e) => document.getElementById(e.target.getAttribute("item")).scrollIntoView() }  href={"#/home#"+item.link}>{item.name}</a>
-      )}
+      {navhash == "/index" ? (
+        <a item={item.link} onClick={(e) => {
+          document.getElementById(e.target.getAttribute("item")).scrollIntoView();
+         closenavfc()
+      } } >{item.name}</a>
+      ) :null}
     </div></div>
 
    ))
 }
-<div><div className="hr"></div>
-    <div className="navitem" >
-     <a href="#/quoteform">Get Your Quote</a>
-    </div></div>
-
+   <div>
+      <div className="hr"></div>
+      <div className="navitem" >
+       <a href="quoteform.html#/quoteform">Get Your Quote</a>
+      </div>
+    </div>
+    <div>
+      <div className="hr"></div>
+      <div className="navitem" >
+       <a href="Book_a_meeting.html#/Book_a_meeting">Book a Meeting</a>
+      </div>
+    </div>
   {servicelistnavbarmain.map((test) => (
     <div>
       <div className="hr"></div>
@@ -175,7 +189,7 @@ const ResNav = () => {
           <div className="arrow"></div>
         </div>
         <div className="nav_mobile_subsection">
-       {test.values.map((linktopage)=>(<div className="subitem">< a item={linktopage.replace(/ /g,"_")} onClick={(e) =>openlink(e) } href={"#/"+test.link+"#"+linktopage.replace(/ /g,"_")}>{linktopage}</a></div>))}
+       {test.values.map((linktopage)=>(<div className="subitem">< a item={linktopage.replace(/ /g,"_")} onClick={(e) =>openlink(e) } href={test.link+".html#/"+test.link+"#"+linktopage.replace(/ /g,"_")}>{linktopage}</a></div>))}
        </div>
       </div>
     </div>

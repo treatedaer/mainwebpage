@@ -383,7 +383,7 @@ input[type=checkbox]:checked ~ .mobile_navitem_flexbox .arrow{
       .navitem a{
         color: inherit;
 font-weight: 300;
-  
+  cursor: pointer;
         }
      .navbar .navitem_subsection a{
        color: inherit;

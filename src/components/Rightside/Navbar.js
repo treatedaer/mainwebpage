@@ -83,7 +83,7 @@ setWeekdayquote(weekday[d.getDay()])
     <ul className="social-icons">
         <li><a href="https://instagram.com/treatedaer?igshid=YmMyMTA2M2Y=" target="_blank"><i className="fa fa-instagram"></i></a></li>
 
-        <li><a href=""><i className="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100088806852200" target="_blank"><i className="fa fa-facebook"></i></a></li>
     </ul>
     </div>
 

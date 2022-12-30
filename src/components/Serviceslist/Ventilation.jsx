@@ -6,6 +6,7 @@ import './Services.css';
 import React, { useEffect } from 'react';
 import { useLocation} from "react-router-dom";
 import Footer from '../Footer/Footer';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -120,7 +121,19 @@ console.log(partylist.servicelist[0].tags)
              },[]);
   return (
     <div><Rightside type="productdisplay" product_display_Banner={product_display_holder}/>
+<Helmet>
+<title>Ventilation - Treatedaer</title>
+<meta
+  name="description"
+  content="Mechanical ventilation systems will provide the 
+  best and most reliable air filtration and cleaning. 
+  Much better ventilation is provided through a balanced 
+  system in which separate fans drive both inlet and exhaust airflow. 
+  This allows us to control where the fresh air comes from, where that 
+  fresh air is delivered, and from where exhaust air is drawn."
+/>
 
+</Helmet>
 
     <center><h2 className='topic'>Where?</h2></center>
     <div className='collingsystem'>

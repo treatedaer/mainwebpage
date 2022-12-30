@@ -1,7 +1,7 @@
 ﻿
 import Rightside from '../Rightside/Topform';
 import './Services.css';
-
+import { Helmet } from "react-helmet";
 import React, {  useState , useEffect } from 'react';
 import product from '../products/photo.png';
 import SPAC from '../products/SplitAC.png';
@@ -186,6 +186,22 @@ console.log(partylist.servicelist[0].tags)
              },[]);
   return (
     <div><Rightside type="productdisplay" product_display_Banner={product_display_holder}/>
+
+		<Helmet>
+
+			<title>Cooling Systems - AC Services , Replacement & Installation  - Treatedaer</title>
+			<meta
+				name="description"
+				content="Air conditioning & Cooling is removal of heat, usually
+        resulting in a lower temperature and/or phase change. Temperature
+        lowering achieved by any other means may also be called cooling.
+        Air conditioning is the process of removing heat from an enclosed 
+        space to achieve a more comfortable interior environment (sometimes
+        referred to as 'comfort cooling') and in some cases also strictly 
+        controlling the humidity of internal air."
+			/>
+		</Helmet>
+
     <div className='collingsystem'>
     <div className='collingsystemholder'>
 {slides}

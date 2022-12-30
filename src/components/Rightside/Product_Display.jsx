@@ -29,7 +29,7 @@ const servicelistnavbarmain = [
     values: [
     ],
     name: "Home",
-    link: "Home",
+    link: "index",
   },
   {
     values: [
@@ -70,14 +70,14 @@ const partylist=
       servicelist:[
   
         {
-          service:"Get In touch",link:banner1,bgcolor:"white",link_mobile:banner1mobile
+          service:"Get In touch",link:banner1,bgcolor:"white",link_mobile:banner1mobile,alt:"hvac near me"
         },
         {
-          service:"Future",link:banner2,bgcolor:"#03142e",link_mobile:banner2mobile
+          service:"Future",link:banner2,bgcolor:"#03142e",link_mobile:banner2mobile,alt:"ac repair"
         }
         ,
         {
-          service:"OfferBanner",link:banner_3,bgcolor:"#03142e",link_mobile:banner3mobile
+          service:"OfferBanner",link:banner_3,bgcolor:"#03142e",link_mobile:banner3mobile,alt:"heating and cooling near me"
         }
       ]
   
@@ -111,7 +111,7 @@ const Product_display = (props) => {
   
         partylist.servicelist.map(serviceobj =>slides.push(<SwiperSlide key={`slide-${serviceobj.service}`}><img src={windowSize.innerWidth>673?serviceobj.link:serviceobj.link_mobile} 
          
-          className='desc'></img></SwiperSlide>) 
+          className='desc' alt={serviceobj.alt}></img></SwiperSlide>) 
   
         )
  /*
@@ -213,19 +213,19 @@ console.log(productdetail)
         />
         <h1 className="company_name">Treatedaer</h1>
     <div className={windowSize.innerWidth>800?"navitem-holder":"navitem-holder mobile"}>
-    <div className="phone_holder meeting_desktop_img_holder"><a href="#/Book_a_meeting" >{windowSize.innerWidth>800?<img className="whatsapp_img" src={sheduleameeting}/>:<img className="whatsapp_img_mobile shcedulemeeting" src={sheduleameeting}/>}</a></div>
+    <div className="phone_holder meeting_desktop_img_holder"><a href="Book_a_meeting.html#/Book_a_meeting" >{windowSize.innerWidth>800?<img className="whatsapp_img" src={sheduleameeting}/>:<img className="whatsapp_img_mobile shcedulemeeting" src={sheduleameeting}/>}</a></div>
         <div className="navitemsholder">
 
         
         {servicelistnavbarmain.map((item2)=>(
           <div className="item">
-           <div className="item_a_conatiner"> <a onClick={closenavfc} href={"#/"+item2.link}>{item2.name}</a></div>
+           <div className="item_a_conatiner"> <a onClick={closenavfc} href={item2.link+".html"+"#/"+item2.link}>{item2.name}</a></div>
           <div className="navitemsection">
           {
           item2.values.map((item) => (
           <div className="navitem_subsection">
               
-              <a item={item.replace(/ /g,"_")} onClick={(e) => document.getElementById(e.target.getAttribute("item")).scrollIntoView() } href={"#/"+item2.link + "#" + item.replace(/\s/g,"_")}>
+              <a item={item.replace(/ /g,"_")} onClick={(e) => document.getElementById(e.target.getAttribute("item")).scrollIntoView() } href={item2.link+".html"+"#/"+item2.link + "#" + item.replace(/\s/g,"_")}>
                 {item}
               </a>
          
@@ -246,7 +246,7 @@ console.log(productdetail)
         </div>
         <div className="phone_holder"><a href="https://wa.me/918489792955" target="_blank">{windowSize.innerWidth>800?<img className="whatsapp_img" src={whatsapp_chatwithus}/>:<img className="whatsapp_img_mobile" src={whatsapp}/>}</a></div>
 </div>
-{location.pathname=="/Home" ? 
+{location.pathname=="/index" ? 
       <Swiper
     
     slidesPerView={slideperview}
@@ -281,7 +281,7 @@ console.log(productdetail)
 {location.pathname=="/home"?<h1>{productdetail.mainhead}</h1>:<h1 className="h1_otherthanhome" >{productdetail.mainhead}</h1>}
         <h2 className={productdetail.subhead}>{productdetail.subhead}</h2>
         <div className="item">
-           <div> <a onClick={closenavfc} href="#/quoteform">Get Product</a></div>
+           <div> <a onClick={closenavfc} href="quoteform.html#/quoteform">Get Product</a></div>
            </div>
       </center>
 
@@ -306,7 +306,7 @@ console.log(productdetail)
                
                 <div  className="product_name">{details_point}</div>
               ))}
-              <button value={products.topic} onClick={(e) => window.location.href='#/quoteform?_q='+e.target.value} >Get Quote</button>
+              <button value={products.topic} onClick={(e) => window.location.href='quoteform.html#/quoteform?_q='+e.target.value} >Get Quote</button>
             </div>
           </div>
         ))}

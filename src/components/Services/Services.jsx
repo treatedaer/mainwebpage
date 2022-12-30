@@ -16,13 +16,13 @@ function Services() {
 
    
         {
-          service:"Ventilation",link:Ac,page:"Ventilation"
+          service:"Ventilation",link:Ac,page:"Ventilation.html#/Ventilation"
         },
         {
-          service:"Cooling",link:cooling,page:"Cooling"
+          service:"Cooling",link:cooling,page:"Cooling.html#/Cooling"
         },
         {
-          service:"Services and maintenance",link:require('../imgs/handShake.jpg'),page:"Maintaince_Repair"
+          service:"Services and maintenance",link:require('../imgs/handShake.jpg'),page:"Maintaince_Repair.html#/Maintaince_Repair"
         }
       ]
 
@@ -38,7 +38,7 @@ const slides=[];
 
 
       partylist.servicelist.map(serviceobj =>slides.push(
-        <a href={"#/"+serviceobj.page}>   <div data-attribute={serviceobj.link} className='theservice'    style={
+        <a href={serviceobj.page}>   <div data-attribute={serviceobj.link} className='theservice'    style={
           {background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.94) 0.1%, rgba(0, 0, 0, 0.3)), url('${serviceobj.link}')`,
           backgroundSize: 'cover', backgroundRepeat: 'no-repeat',backgroundPositionX:'50%, 50% , 50%,50%',backgroundPositionY: '50%, 50%'
         }

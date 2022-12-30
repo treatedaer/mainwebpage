@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useEffect } from "react";
-
+import { Helmet } from "react-helmet";
 SwiperCore.use([Virtual, Navigation, Pagination,Autoplay]);
 
 
@@ -66,7 +66,14 @@ const Rightside = (props) => {
    
   
    
-   
+   <Helmet>
+<title>Get Quote Now - Treatedaer</title>
+<meta
+  name="description"
+  content="Get the Most Affortable Quote in the market now"
+/>
+
+</Helmet>
 
 
    
